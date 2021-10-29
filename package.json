@@ -1,0 +1,49 @@
+{
+  "name": "nsc-tree",
+  "version": "1.0.0",
+  "description": "upload based on antd + React",
+  "author": "aaxuyun",
+  "license": "ISC",
+  "repository": "https://github.com/aaxuyun/nsc-tree.git",
+  "main": "es/index.js",
+  "module": "es/index.es.js",
+  "jsnext:main": "es/index.es.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepublish": "yarn build",
+    "test": "npm run test:unit test:lint test:build",
+    "test:build": "yarn build",
+    "test:lint": "eslint .",
+    "predeploy": "cd example && yarn install && yarn run build"
+  },
+  "peerDependencies": {
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-external-helpers": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "@svgr/rollup": "^5.4.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-url": "^3.0.1"
+  },
+  "files": [
+    "es"
+  ],
+  "dependencies": {}
+}
