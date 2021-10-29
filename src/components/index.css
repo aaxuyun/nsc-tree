@@ -41,7 +41,7 @@
   pointer-events: none;
 }
 .nsc-tree.nsc-tree-directory .nsc-tree-treenode:hover::before {
-  background: #f5f5f5;
+  background: #dcf5ea;
 }
 .nsc-tree.nsc-tree-directory .nsc-tree-treenode > * {
   z-index: 1;
@@ -65,7 +65,7 @@
 }
 .nsc-tree.nsc-tree-directory .nsc-tree-treenode-selected:hover::before,
 .nsc-tree.nsc-tree-directory .nsc-tree-treenode-selected::before {
-  background: #1890ff;
+  background: #02b486;
 }
 .nsc-tree.nsc-tree-directory .nsc-tree-treenode-selected .nsc-tree-switcher {
   color: #fff;
@@ -94,7 +94,7 @@
 .nsc-tree-checkbox-wrapper:hover .nsc-tree-checkbox-inner,
 .nsc-tree-checkbox:hover .nsc-tree-checkbox-inner,
 .nsc-tree-checkbox-input:focus + .nsc-tree-checkbox-inner {
-  border-color: #1890ff;
+  border-color: #02b486;
 }
 .nsc-tree-checkbox-checked::after {
   position: absolute;
@@ -102,7 +102,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid #1890ff;
+  border: 1px solid #02b486;
   border-radius: 2px;
   visibility: hidden;
   -webkit-animation: antCheckboxEffect 0.36s ease-in-out;
@@ -168,8 +168,8 @@
   content: ' ';
 }
 .nsc-tree-checkbox-checked .nsc-tree-checkbox-inner {
-  background-color: #1890ff;
-  border-color: #1890ff;
+  background-color: #02b486;
+  border-color: #02b486;
 }
 .nsc-tree-checkbox-disabled {
   cursor: not-allowed;
@@ -183,11 +183,11 @@
   cursor: not-allowed;
 }
 .nsc-tree-checkbox-disabled .nsc-tree-checkbox-inner {
-  background-color: #f5f5f5;
+  background-color: #dcf5ea;
   border-color: #d9d9d9 !important;
 }
 .nsc-tree-checkbox-disabled .nsc-tree-checkbox-inner::after {
-  border-color: #f5f5f5;
+  border-color: #dcf5ea;
   border-collapse: separate;
   -webkit-animation-name: none;
           animation-name: none;
@@ -261,7 +261,7 @@
   left: 50%;
   width: 8px;
   height: 8px;
-  background-color: #1890ff;
+  background-color: #02b486;
   border: 0;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
@@ -311,7 +311,7 @@
   background: transparent;
 }
 .nsc-tree .nsc-tree-treenode-active .nsc-tree-node-content-wrapper {
-  background: #f5f5f5;
+  background: #dcf5ea;
 }
 .nsc-tree .nsc-tree-treenode:not(.nsc-tree .nsc-tree-treenode-disabled).filter-node .nsc-tree-title {
   color: inherit;
@@ -360,7 +360,7 @@
   transform: rotate(-90deg);
 }
 .nsc-tree-switcher-loading-icon {
-  color: #1890ff;
+  color: #02b486;
 }
 .nsc-tree-switcher-leaf-line {
   position: relative;
@@ -403,7 +403,7 @@
   transition: all 0.3s, border 0s, line-height 0s, box-shadow 0s;
 }
 .nsc-tree .nsc-tree-node-content-wrapper:hover {
-  background-color: #f5f5f5;
+  background-color: #dcf5ea;
 }
 .nsc-tree .nsc-tree-node-content-wrapper.nsc-tree-node-selected {
   background-color: #bae7ff;
@@ -433,7 +433,7 @@
   position: absolute;
   z-index: 1;
   height: 2px;
-  background-color: #1890ff;
+  background-color: #02b486;
   border-radius: 1px;
   pointer-events: none;
 }
@@ -444,12 +444,12 @@
   width: 8px;
   height: 8px;
   background-color: transparent;
-  border: 2px solid #1890ff;
+  border: 2px solid #02b486;
   border-radius: 50%;
   content: '';
 }
 .nsc-tree .nsc-tree-treenode.drop-container > [draggable] {
-  box-shadow: 0 0 0 2px #1890ff;
+  box-shadow: 0 0 0 2px #02b486;
 }
 .nsc-tree-show-line .nsc-tree-indent-unit {
   position: relative;

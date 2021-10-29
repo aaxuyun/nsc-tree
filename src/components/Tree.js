@@ -104,7 +104,7 @@ Tree.defaultProps = {
   selectable: true,
   showIcon: false,
   virtual: true,
-  direction: 'rtl',
+  direction: 'ltr',
   motion: {
     ...collapseMotion,
     motionAppear: false,
