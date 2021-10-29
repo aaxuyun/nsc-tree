@@ -45,5 +45,7 @@
   "files": [
     "es"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "rc-tree": "4.2.1"
+  }
 }
