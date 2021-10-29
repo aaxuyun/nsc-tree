@@ -194,7 +194,7 @@ class DirectoryTree extends React.Component {
   render() {
     const { prefixCls: customizePrefixCls, className, direction, ...otherProps } = this.props;
     const { expandedKeys, selectedKeys } = this.props;
-    const prefixCls = 'ant-tree'
+    const prefixCls = 'nsc-tree'
     const connectClassName = classNames(
       `${prefixCls}-directory`,
       className,

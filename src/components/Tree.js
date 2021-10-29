@@ -7,7 +7,6 @@ import collapseMotion from './utils/motion';
 import renderSwitcherIcon from './utils/iconUtil';
 import dropIndicatorRender from './utils/dropIndicator';
 import './index.css'
-
 class Tree extends React.Component {
   static defaultProps = {
     checkable: false,
@@ -62,7 +61,7 @@ class Tree extends React.Component {
       virtual,
       direction
     } = this.props;
-    const prefixCls = 'ant-tree'
+    const prefixCls = 'nsc-tree'
     const newProps = {
       ...this.props,
       showLine,
@@ -74,10 +73,15 @@ class Tree extends React.Component {
         virtual={virtual}
         {...newProps}
         prefixCls={prefixCls}
-        className={classNames(className, {
-          [`${prefixCls}-icon-hide`]: !showIcon,
-          [`${prefixCls}-block-node`]: blockNode,
-        })}
+        className={classNames(
+          {
+            [`${prefixCls}-icon-hide`]: !showIcon,
+            [`${prefixCls}-block-node`]: blockNode,
+            [`${prefixCls}-unselectable`]: !selectable,
+            [`${prefixCls}-rtl`]: direction === 'rtl',
+          },
+          className,
+        )}
         direction={direction}
         checkable={checkable ? <span className={`${prefixCls}-checkbox-inner`} /> : checkable}
         selectable={selectable}
