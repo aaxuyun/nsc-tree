@@ -77,7 +77,7 @@ class DirectoryTree extends React.Component {
 
     // Call internal rc-tree expand function
     // https://github.com/ant-design/ant-design/issues/12567
-    internalTree.onNodeExpand(event, node);
+    internalTree && internalTree.onNodeExpand(event, node);
   };
 
   onDebounceExpand = debounce(this.expandFolderNode, 200, {
