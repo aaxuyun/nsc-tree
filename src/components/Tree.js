@@ -71,6 +71,7 @@ class Tree extends React.Component {
       <RcTree
         itemHeight={20}
         virtual={virtual}
+        ref={r => this.tree = r}
         {...newProps}
         prefixCls={prefixCls}
         className={classNames(
