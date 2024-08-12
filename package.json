@@ -1,6 +1,6 @@
 {
   "name": "nsc-tree",
-  "version": "1.0.1-2",
+  "version": "1.0.2",
   "description": "upload based on antd + React",
   "author": "aaxuyun",
   "license": "ISC",
@@ -46,6 +46,6 @@
     "es"
   ],
   "dependencies": {
-    "rc-tree": "4.2.1"
+    "rc-tree": "^5.8.8"
   }
 }
